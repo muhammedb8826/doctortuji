@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Doctor Tuji",
-  description: "Orthopedic, Trauma & Spine care you can count on.",
+  title: "Doctor Tuji Orthopedic Clinic",
+  description:
+    "Doctor Tuji Orthopedic Clinic in [City] provides expert care for knee, hip, spine and sports injuries including joint replacement and rehabilitation.",
 };
 
 export default function RootLayout({
@@ -26,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="force-light">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-[#F7FAFB] text-slate-900`}
+      >
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
